@@ -1,0 +1,174 @@
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.formWrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.rowWrapper {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.inputStyle {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-size: 16px;
+  outline: none;
+  background: #f9fafb;
+  min-width: 150px;
+}
+
+.dateField {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.3rem;
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #1d4ed8, #1e40af);
+}
+
+.btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.btnCancel {
+  background: #6b7280;
+}
+
+.btnCancel:hover {
+  background: #4b5563;
+}
+
+.tableContainer {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden; /* To contain the table's border-radius effect */
+}
+
+.table {
+  display: block;
+}
+
+.thead, .tr {
+  display: grid;
+  /* Adjust column widths for the 10 columns in the exams table */
+  grid-template-columns: 60px 1fr 1.5fr 1fr 1.5fr 1.5fr 1.5fr 1.5fr 120px 210px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.thead {
+  background: #f7fafc;
+  font-weight: bold;
+  color: #4a5568;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.th, .td {
+  text-align: left;
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actionsCell {
+  white-space: nowrap;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.startBtn, .endBtn, .editBtn {
+  padding: 0.4rem 0.8rem;
+  font-size: 12px;
+}
+
+.startBtn {
+  background: #22c55e;
+}
+.startBtn:hover {
+  background: #16a34a; 
+}
+
+.endBtn {
+  background: #ef4444;
+}
+.endBtn:hover {
+  background: #dc2626;
+}
+
+.editBtn {
+  background: #3b82f6;
+}
+.editBtn:hover {
+  background: #2563eb;
+}
+
+.badge {
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.notstarted {
+  background: #3b82f6; /* blue */
+}
+
+.ongoing {
+  background: #f59e0b; /* amber */
+}
+
+.completed {
+  background: #10b981; /* emerald */
+}
+
+/* Inline form error text */
+.errorText {
+  color: #b91c1c; /* red-700 */
+  font-size: 12px;
+  margin-top: -6px;
+  margin-bottom: 4px;
+}

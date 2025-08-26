@@ -1,0 +1,146 @@
+/* AdminSidebar.module.css */
+.sidebar {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-right: 1px solid rgba(229, 231, 235, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 50;
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 260px; /* Same as sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+
+.navigation {
+  padding: 2rem 0;
+  flex: 1;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  margin-bottom: 0.5rem;
+  padding: 0 1rem;
+}
+
+.menuLink {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.5rem;
+  text-decoration: none;
+  color: #4a5568;
+  background: transparent;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease, background-color 0.2s ease;
+  border-left: 4px solid transparent;
+}
+
+.menuLink:hover {
+  color: #2d3748;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.menuLinkActive {
+  color: #667eea;
+  font-weight: 600;
+  background: rgba(102, 126, 234, 0.08);
+  border-left: 4px solid #667eea;
+}
+
+.menuLinkActive:hover {
+  background: rgba(102, 126, 234, 0.12);
+}
+
+.menuIcon {
+  font-size: 1.2rem;
+  min-width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminInfo {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(229, 231, 235, 0.6);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: transparent;
+  margin: 0;
+}
+
+.adminAvatar {
+  color: #667eea;
+  font-size: 2.5rem;
+}
+
+.adminDetails {
+  flex: 1;
+}
+
+.adminName {
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.adminRole {
+  color: #6b7280;
+  font-size: 0.85rem;
+  margin: 0.25rem 0 0 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .mainContent {
+    margin-left: 0;
+  }
+}
+
+/* Animation for menu items */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menuItem {
+  animation: slideInLeft 0.3s ease-out;
+}
+
+.menuItem:nth-child(1) { animation-delay: 0.1s; }
+.menuItem:nth-child(2) { animation-delay: 0.2s; }
+.menuItem:nth-child(3) { animation-delay: 0.3s; }
+.menuItem:nth-child(4) { animation-delay: 0.4s; }
+.menuItem:nth-child(5) { animation-delay: 0.5s; }
+.menuItem:nth-child(6) { animation-delay: 0.6s; }
+.menuItem:nth-child(7) { animation-delay: 0.7s; }
+.menuItem:nth-child(8) { animation-delay: 0.8s; }

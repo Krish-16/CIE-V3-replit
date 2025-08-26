@@ -1,0 +1,94 @@
+.formWrapper {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  align-items: center;
+}
+
+.inputStyle {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-size: 16px;
+  outline: none;
+  background: #f9fafb;
+  min-width: 150px;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btnCancel {
+    background: gray;
+}
+
+.btnDanger {
+    background: #dc2626; /* red-600 */
+}
+
+.tableContainer {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden; /* This will clip the table corners */
+}
+
+.table {
+  display: block;
+}
+
+.thead, .tr {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 1fr 1fr 1fr 120px; /* S. No, Name, SID, Dept Name, Dept ID, Semester, Actions */
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.thead {
+  background: #f7fafc;
+  font-weight: bold;
+  color: #4a5568;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.th, .td {
+  text-align: left;
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.actionsCell button {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+}
+
+/* Inline form error text */
+.errorText {
+  color: #b91c1c; /* red-700 */
+  font-size: 12px;
+  margin-top: -8px;
+  margin-bottom: 4px;
+}
